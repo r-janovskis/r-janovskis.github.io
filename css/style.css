@@ -1,0 +1,74 @@
+/* Set global styles and remove built-in margines*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Formatting header*/
+header {
+
+    border-bottom: 2px solid gray;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: end;
+}
+
+
+header p, a {
+    font-family: 'Tilt Neon';
+    
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Remove bulletins from the list items*/
+header ul {
+    list-style-type: none;
+}
+/*
+.container {
+    display: flex;
+    max-width: 1000px;
+    height: 100%;
+    margin: 10px auto;
+    justify-content:space-between;
+    align-items: end;
+}
+*/
+header li {
+    display: inline;
+}
+
+header a {
+    color: black;
+    font-size: 1.2rem;
+    
+    margin-left: 15px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: 900;
+}
+
+header a:hover {
+    color: gray;
+}
