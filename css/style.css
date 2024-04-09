@@ -26,10 +26,9 @@ header {
 }
 
 
-header p, a {
+header p, header a, footer{
     font-family: 'Tilt Neon';
     
-    margin-bottom: 0.5rem;
     margin-top: 1rem;
 }
 
@@ -42,6 +41,7 @@ header p {
 header ul {
     list-style-type: none;
 }
+
 /*
 .container {
     display: flex;
@@ -52,6 +52,7 @@ header ul {
     align-items: end;
 }
 */
+
 header li {
     display: inline;
 }
@@ -71,4 +72,17 @@ header a {
 
 header a:hover {
     color: gray;
+}
+
+/*Footer formatting*/
+footer {
+    
+    color: white;
+    background-color: black;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+}
+
+footer p {
+    text-align: center;
 }
