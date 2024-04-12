@@ -3,3 +3,35 @@
 .bi {
     font-size: 2rem;
 }
+
+/* Format positoning of main content*/
+main {
+    padding-left: 1.5rem;
+}
+
+/*Format links*/
+article a {
+    color: darkblue;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: super;
+    padding-left: 0.5rem;
+}
+
+article a:hover {
+    color: blue;
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+
+
+
+
