@@ -6,7 +6,12 @@
     <title>Reinis-Contacts</title>
     <!-- Importing google font Merriweather and Tilt Neon-->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tilt+Neon&display=swap" rel="stylesheet">
+    
+    <!-- Importing bootstrap to get access to the icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacts_style.css"
 </head>
 <body>
     <!-- In header we will include 2 elements
@@ -31,7 +36,25 @@
         </ul>
         <!--</div>-->
     </header>
-    <h1>Contacts page</h1>
+    <!-- In the main part we will have list of contact informations.
+        We will format it as a flexbox
+        - title
+        - elements of where to find us/ get in touch with us
+        - github
+        - linked in, etc
+        They will consist of an icon and username
+    -->
+    <main>
+        <h1>Contacts</h1>
+        <section>
+            <ul>
+                <li>
+                    <p><i class="bi bi-github"></i> r-janovskis</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
     <!-- Footer will be simple: black background and white letters with license info-->
     <footer>
         <p>@ 2024 Reinis Janovskis</p>
