@@ -1,0 +1,58 @@
+
+article {
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.accordion {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid royalblue;
+    border-radius: 0.5rem;
+
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    transition: 0.4s;
+}
+
+.accordion:hover {
+    background-color: lightblue;
+}
+
+button.active {
+    background-color: lightblue;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-around;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease-in 0.1s;
+}
+
+.description {
+    width: 70%;
+}
+
+.description p {
+    margin: 0.5rem;
+}
+
+.image {
+    width: 25%;
+    margin: 0.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
