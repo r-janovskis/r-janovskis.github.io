@@ -27,7 +27,11 @@ footer {
     height: 3vh;
 }
 
-
+p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+}
 
 h1 {
     font-size: 2rem;
@@ -71,17 +75,6 @@ header ul {
     list-style-type: none;
 }
 
-/*
-.container {
-    display: flex;
-    max-width: 1000px;
-    height: 100%;
-    margin: 10px auto;
-    justify-content:space-between;
-    align-items: end;
-}
-*/
-
 header li {
     display: inline;
 }
@@ -114,4 +107,42 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+
+/* Formatting of main area on index.html*/
+
+.about_me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description {
+    width: 60%;
+}
+
+
+
+.image {
+    width: 35%;
+    margin: 0.5rem;
+    min-width: 350px;
+    
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+
+ul {
+    margin-left: 2rem;
+}
+
+article {
+    margin-top: 2rem;
 }
