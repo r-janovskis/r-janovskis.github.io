@@ -10,7 +10,7 @@ for (let i = 0; i < acc.length; i++) {
         if(panel.style.maxHeight) {
             panel.style.maxHeight = null;
         } else {
-            panel.style.maxHeight =  "300px";
+            panel.style.maxHeight =  panel.scrollHeight + "px";
         }
     });
 }
