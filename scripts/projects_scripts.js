@@ -7,10 +7,10 @@ for (let i = 0; i < acc.length; i++) {
         this.classList.toggle("active");
 
         let panel = this.nextElementSibling;
-        if(panel.style.maxHeight) {
-            panel.style.maxHeight = null;
+        if(panel.style.height) {
+            panel.style.height = null;
         } else {
-            panel.style.maxHeight =  panel.scrollHeight + "px";
+            panel.style.height =  panel.scrollHeight + "px";
         }
     });
 }

@@ -99,6 +99,22 @@ header a:hover {
     color: gray;
 }
 
+/* adding media queries for heading*/
+@media only screen and (max-width: 1200px) {
+    header {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 /*Footer formatting*/
 footer p {
     text-align: center;
@@ -106,13 +122,6 @@ footer p {
 
 
 /* Formatting of main area on index.html*/
-/*
-.about_me {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-*/
 .about_me .image {
     float: right;
     width: 35%;
@@ -126,6 +135,13 @@ img {
     width: 100%;
     object-fit: cover;
     border-radius: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .about_me .image {
+        float: none;
+        width: 100%;
+    }
 }
 
 
@@ -164,6 +180,17 @@ article {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: start;
+}
+
+@media only screen and (max-width: 600px) {
+    #experience {
+        grid-template-areas: 
+        "head" 
+        "head" 
+        "work" 
+        "education";
+        grid-template-columns: 1fr;
+    }
 }
 
 #experience h1 {
@@ -242,9 +269,9 @@ button.active {
     display: flex;
     margin: 0.5rem;
     justify-content: space-around;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.9s ease-in 0.1s;
+    transition: height 0.9s ease-in 0.1s;
 }
 
 .description {
@@ -261,13 +288,25 @@ button.active {
 }
 
 .projects img {
-    display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-
 ul {
     margin-left: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .projects .image {
+        display: none;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    
+    
+    
 }
