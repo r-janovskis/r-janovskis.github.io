@@ -1,31 +1,4 @@
 
-/*Format icon size*/
-.bi {
-    font-size: 2rem;
-}
-
-/*Format links*/
-article a {
-    color: darkblue;
-    cursor: pointer;
-    text-decoration: none;
-    vertical-align: super;
-    padding-left: 0.5rem;
-}
-
-article a:hover {
-    color: blue;
-    font-weight: 700;
-}
-
-ul {
-    list-style-type: none;
-    margin-left: 1.5rem;
-}
-
-li {
-    margin: 10px 0;
-}
 
 
 
