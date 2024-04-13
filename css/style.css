@@ -146,3 +146,40 @@ ul {
 article {
     margin-top: 2rem;
 }
+
+
+/* Formating of about.html*/
+
+.company, .time {
+    font-size: 1rem;
+    margin: 0.25rem;
+    padding-left: 0.5rem;
+}
+
+.company{
+    font-style: italic;
+    
+}
+
+#experience {
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "work education";
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: start;
+}
+
+#experience h1 {
+    grid-area: head;
+}
+
+#work {
+    grid-area: work;
+}
+
+#education {
+    grid-area: education;
+}
