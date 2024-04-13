@@ -100,13 +100,13 @@ header a:hover {
 }
 
 /* adding media queries for heading*/
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     header {
         padding: 0 1rem;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
    
     header {
         flex-direction: column;
@@ -137,7 +137,7 @@ img {
     border-radius: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .about_me .image {
         float: none;
         width: 100%;
@@ -182,7 +182,7 @@ article {
         align-items: start;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #experience {
         grid-template-areas: 
         "head" 
@@ -297,7 +297,7 @@ ul {
     margin-left: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .projects .image {
         display: none;
     }
