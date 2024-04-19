@@ -20,7 +20,7 @@ body {
         "head"
         "content"
         "foot";
-    grid-template-rows: 3rem 1fr 3rem;
+    grid-template-rows: auto 1fr auto;
     gap: 2rem;
 }
 
