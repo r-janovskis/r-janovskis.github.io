@@ -1,338 +1,330 @@
 /* Set global styles and remove built-in margines*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
 }
 
 /* Dimentions of body 
     Let's try to make it in grid so we can always have header at the top, footer at the bottom even if content in main doesn't fill full screen.*/
 body {
-    display: grid;
-    max-width: 1200px;
-    min-height: 100vh;
-    margin: 0 auto;
-    grid-template-areas: 
-        "head"
-        "content"
-        "foot";
-    grid-template-rows: auto 1fr auto;
-    gap: 2rem;
+  display: grid;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  grid-template-areas:
+    "head"
+    "content"
+    "foot";
+  grid-template-rows: auto 1fr auto;
+  gap: 2rem;
 }
 
 header {
-    /*min-height: 3rem;*/
-    grid-area: head;
-    border-bottom: 0.2rem solid gray;
-    box-sizing: border-box;
+  /*min-height: 3rem;*/
+  grid-area: head;
+  border-bottom: 0.2rem solid gray;
+  box-sizing: border-box;
 
-    display: flex;
-    justify-content:space-between;
-    align-items: end;
-    /*margin-bottom: 2rem;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  /*margin-bottom: 2rem;*/
 }
 
 main {
-    /*min-height: 47rem;*/
-    grid-area: content;
-    width: 90%;
-    margin: 0 auto;
+  /*min-height: 47rem;*/
+  grid-area: content;
+  width: 90%;
+  margin: 0 auto;
 }
 
 footer {
-    grid-area: foot;
-    color: white;
-    background-color: black;
-    /*margin-top: 2rem;*/
-    padding: 0.2rem 0;
+  grid-area: foot;
+  color: white;
+  background-color: black;
+  /*margin-top: 2rem;*/
+  padding: 0.2rem 0;
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    margin-top: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 h2 {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .bold {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 /*Global main position and styles*/
 
-
-
 /* Formatting header*/
-header p, header a, footer p {
-    font-family: 'Tilt Neon', sans-serif;
-    margin-top: 1rem;
+header p,
+header a,
+footer p {
+  font-family: "Tilt Neon", sans-serif;
+  margin-top: 1rem;
 }
 
 header p {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* Remove bulletins from the list items*/
 header ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 header li {
-    display: inline;
+  display: inline;
 }
 
 header a {
-    color: black;
-    font-size: 1.2rem;
-    
-    margin-left: 15px;
-    margin-bottom: 5px;
-    text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+
+  margin-left: 15px;
+  margin-bottom: 5px;
+  text-decoration: none;
 }
 
 .active {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 header a:hover {
-    color: gray;
+  color: gray;
 }
 
 /* adding media queries for heading*/
 @media only screen and (max-width: 1200px) {
-    header {
-        padding: 0 1rem;
-    }
+  header {
+    padding: 0 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-   
-    header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0;
-    }
-    header ul {
-        margin: 0;
-    }
-
-
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  header ul {
+    margin: 0;
+  }
 }
 
 /*Footer formatting*/
 footer p {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* Formatting of main area on index.html*/
 
 article {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .about_me {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .about_me .image {
-    float: right;
-    width: 35%;
-    margin: 0.5rem;
-    min-width: 350px;
-    
+  float: right;
+  width: 35%;
+  margin: 0.5rem;
+  min-width: 350px;
 }
 
 img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 2rem;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .about_me .image {
-        float: none;
-        width: 100%;
-        min-width: 0;
-        margin: 0;
-    }
+  .about_me .image {
+    float: none;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
 }
 
-
 .skills ul {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .skills ul p {
-    line-height: 1;
+  line-height: 1;
 }
-
 
 /* Formating of about.html*/
 
-.company, .time {
-    font-size: 1rem;
-    margin: 0.25rem;
-    padding-left: 0.5rem;
+.company,
+.time {
+  font-size: 1rem;
+  margin: 0.25rem;
+  padding-left: 0.5rem;
 }
 
-.company{
-    font-style: italic;
-    
+.company {
+  font-style: italic;
 }
 
 #experience {
-    display: grid;
-    grid-template-areas: 
-        "head head"
-        "work education";
-        gap: 1rem;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: start;
+  display: grid;
+  grid-template-areas:
+    "head head"
+    "work education";
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: start;
 }
 
 @media only screen and (max-width: 600px) {
-    #experience {
-        grid-template-areas: 
-        "head" 
-        "head" 
-        "work" 
-        "education";
-        grid-template-columns: 1fr;
-    }
+  #experience {
+    grid-template-areas:
+      "head"
+      "head"
+      "work"
+      "education";
+    grid-template-columns: 1fr;
+  }
 }
 
 #experience h1 {
-    grid-area: head;
+  grid-area: head;
 }
 
 #work {
-    grid-area: work;
+  grid-area: work;
 }
 
 #education {
-    grid-area: education;
+  grid-area: education;
 }
 
 /* Styling of contacts page*/
 /*Format icon size*/
 .bi {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /*Format links*/
 .contact a {
-    color: darkblue;
-    cursor: pointer;
-    text-decoration: none;
-    vertical-align: super;
-    padding-left: 0.5rem;
+  color: darkblue;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: super;
+  padding-left: 0.5rem;
 }
 
 .contact a:hover {
-    color: blue;
-    font-weight: 700;
+  color: blue;
+  font-weight: 700;
 }
 
 .contact ul {
-    list-style-type: none;
-    margin-left: 1.5rem;
+  list-style-type: none;
+  margin-left: 1.5rem;
 }
 
 .contact li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-
 
 /*styling of projects page*/
 .accordion {
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 500;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid darkslategray;
-    border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid darkslategray;
+  border-radius: 0.5rem;
 
-    text-align: left;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-top: 0.3rem;
-    transition: 0.4s;
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.3rem;
+  transition: 0.4s;
 }
 
 .first {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .accordion:hover {
-    background-color: silver;
+  background-color: silver;
 }
 
 button.active {
-    background-color: silver;
+  background-color: silver;
 }
 
 .panel {
-    display: flex;
-    margin: 0.5rem;
-    justify-content: space-around;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.9s ease-in 0.1s;
+  display: flex;
+  margin: 0.5rem;
+  justify-content: space-around;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.9s ease-in 0.1s;
 }
 
 .description {
-    width: 60%;
+  width: 60%;
 }
 
 .description p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .projects .image {
-    width: 35%;
-    margin: auto 0.5rem;
+  width: 35%;
+  margin: auto 0.5rem;
 }
 
 .projects img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 ul {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .projects .image {
-        display: none;
-    }
+  .projects .image {
+    display: none;
+  }
 
-    .description {
-        width: 100%;
-    }
-    
-    .contact p {
-        font-size: 1rem;
-    }
+  .description {
+    width: 100%;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
 }

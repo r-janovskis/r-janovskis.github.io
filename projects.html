@@ -1,87 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reinis-Projects</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reinis Janovskis - Projects</title>
     <!-- Importing google font Merriweather and Tilt Neon-->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tilt+Neon&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./scripts/projects_scripts.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- In header we will include 2 elements
     My name (left side) and nav bar on the right side.
     Format header as flex box.-->
     <header>
-        <!--<div class="container">-->
-            <p>Reinis Janovskis</p>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="projects.html" class="active">Projects</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contacts</a>
-                </li>
-            </ul>
-        <!--</div>-->
+      <!--<div class="container">-->
+      <p>Reinis Janovskis</p>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="projects.html" class="active">Projects</a>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+      </ul>
+      <!--</div>-->
     </header>
 
     <!-- Projects will be represented in accordeon style
         Example script where I looked at: https://www.w3schools.com/howto/howto_js_accordion.asp-->
     <main class="projects">
+      <h1>Projects page</h1>
+      <p>Here you will find projects that I have created.</p>
 
-            <h1>Projects page</h1>
-            <p>Here you will find projects that I have created.</p>
-            
-            <button class="accordion first">SIM Card Checker</button>
-            <div class="panel">
-                <div class="description">
-                    <p>SIM Card Checker is an application that I created to automate SIM Card file system checking against specification. As a result we were able to reliably check if SIM cards we received from vendors matched our expectations.</p>
-                    <p>Short description how SIM Card Checker worked:</p>
-                    <ul>
-                        <li><p>Select specification file, where content of each file was defined</p></li>
-                        <li><p>SIM card gets activated and authenticated with necesarry keys (PIN, PUK codes)</p></li>
-                        <li><p>We ittereate through each file and compare if it's content mathces content in specification</p></li>
-                        <li><p>As output HTML file was generated with results.</p></li>
-                    </ul>
-                    <p><span class="bold">Programming Languages:</span> C#, HTML</p>
-                </div>
-                <div class="image">
-                    <img src="./images/SIM.jpeg" alt="Stack of SIM cards">
-                </div>
-            </div>
-            <button class="accordion">Music Player</button>
-            <div class="panel">
-                <div class="description">
-                    <p>During my study period in Griffith College our final assignment were to create a music palyer application. In this project we used our knowledge about accessing files, building interface and managing controls that you would associate with any decent music player.</p>
-                    <p><span class="bold">Programming Languages:</span> Java</p>
-                </div>
-                <div class="image">
-                    <img src="./images/music.jpg" alt="Tape cassete">
-                </div>
-            </div>
-            <button class="accordion">CodeCademy projects</button>
-            <div class="panel">
-                <div class="description">
-                    <p>On my learning journey I enrolled with CodeCademy on Front-End developer path. All this experience I would call one one project. Here is combination of various exercises/smaller projects that I have completed along my learning journey. Including this portfolio - it is a project on it's own and also part of CodeCademy course and another step in my learning journey.</p>
-                    <p><span class="bold">Programming Languages:</span> HTML, CSS, JavaScript</p>
-                </div>
-                <div class="image">
-                    <img src="./images/Codecademy.jpg" alt="CodeCademy logo">
-                </div>
-            </div>
+      <button class="accordion first">SIM Card Checker</button>
+      <div class="panel">
+        <div class="description">
+          <p>
+            SIM Card Checker is an application that I created to automate SIM
+            Card file system checking against specification. As a result we were
+            able to reliably check if SIM cards we received from vendors matched
+            our expectations.
+          </p>
+          <p>Short description how SIM Card Checker worked:</p>
+          <ul>
+            <li>
+              <p>
+                Select specification file, where content of each file was
+                defined
+              </p>
+            </li>
+            <li>
+              <p>
+                SIM card gets activated and authenticated with necesarry keys
+                (PIN, PUK codes)
+              </p>
+            </li>
+            <li>
+              <p>
+                We ittereate through each file and compare if it's content
+                mathces content in specification
+              </p>
+            </li>
+            <li><p>As output HTML file was generated with results.</p></li>
+          </ul>
+          <p><span class="bold">Programming Languages:</span> C#, HTML</p>
+        </div>
+        <div class="image">
+          <img src="./images/SIM.jpeg" alt="Stack of SIM cards" />
+        </div>
+      </div>
+      <button class="accordion">Music Player</button>
+      <div class="panel">
+        <div class="description">
+          <p>
+            During my study period in Griffith College our final assignment were
+            to create a music palyer application. In this project we used our
+            knowledge about accessing files, building interface and managing
+            controls that you would associate with any decent music player.
+          </p>
+          <p><span class="bold">Programming Languages:</span> Java</p>
+        </div>
+        <div class="image">
+          <img src="./images/music.jpg" alt="Tape cassete" />
+        </div>
+      </div>
+      <button class="accordion">CodeCademy projects</button>
+      <div class="panel">
+        <div class="description">
+          <p>
+            On my learning journey I enrolled with CodeCademy on Front-End
+            developer path. All this experience I would call one one project.
+            Here is combination of various exercises/smaller projects that I
+            have completed along my learning journey. Including this portfolio -
+            it is a project on it's own and also part of CodeCademy course and
+            another step in my learning journey.
+          </p>
+          <p>
+            <span class="bold">Programming Languages:</span> HTML, CSS,
+            JavaScript
+          </p>
+        </div>
+        <div class="image">
+          <img src="./images/Codecademy.jpg" alt="CodeCademy logo" />
+        </div>
+      </div>
     </main>
-    
+
     <!-- Footer will be simple: black background and white letters with license info-->
     <footer>
-        <p>@ 2024 Reinis Janovskis</p>
+      <p>@ 2024 Reinis Janovskis</p>
     </footer>
-</body>
+  </body>
 </html>
