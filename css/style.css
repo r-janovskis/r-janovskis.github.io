@@ -128,6 +128,12 @@ header a:hover {
   }
   header ul {
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header li {
+    margin: 0 1rem;
   }
 }
 
@@ -147,10 +153,17 @@ article {
 }
 
 .about_me .image {
-  float: right;
   width: 35%;
   margin: 0.5rem;
   min-width: 350px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 img {
@@ -165,7 +178,7 @@ img {
     float: none;
     width: 100%;
     min-width: 0;
-    margin: 0;
+    margin: 1rem 0;
   }
 }
 
