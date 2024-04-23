@@ -173,6 +173,23 @@ img {
   border-radius: 2rem;
 }
 
+.skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.skills i {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.skills p {
+  vertical-align: middle;
+}
+
 @media only screen and (max-width: 600px) {
   .about_me .image {
     float: none;
@@ -180,14 +197,6 @@ img {
     min-width: 0;
     margin: 1rem 0;
   }
-}
-
-.skills ul {
-  margin-left: 2rem;
-}
-
-.skills ul p {
-  line-height: 1;
 }
 
 /* Formating of about.html*/
@@ -239,7 +248,8 @@ img {
 
 /* Styling of contacts page*/
 /*Format icon size*/
-.bi {
+.bi,
+.fa {
   font-size: 2rem;
 }
 
