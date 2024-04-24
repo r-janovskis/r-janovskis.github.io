@@ -136,10 +136,12 @@ header a:hover {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
-  header li {
-    margin: 0 1rem;
+
+  header a {
+    margin: 0;
+    margin-right: 0.5rem;
   }
 }
 
