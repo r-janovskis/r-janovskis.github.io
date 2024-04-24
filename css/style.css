@@ -176,7 +176,8 @@ img {
 .skills ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: left;
   padding-left: 0;
   margin: 1rem 0;
 }
@@ -188,6 +189,7 @@ img {
 
 .skills p {
   vertical-align: middle;
+  min-width: 150px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -270,10 +272,11 @@ img {
 .contact ul {
   list-style-type: none;
   margin-left: 1.5rem;
+  margin-top: 5rem;
 }
 
 .contact li {
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 
 /*styling of projects page*/
