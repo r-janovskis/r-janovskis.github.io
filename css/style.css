@@ -134,6 +134,7 @@ header a:hover {
   }
   header ul {
     margin: 0;
+    margin-left: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
