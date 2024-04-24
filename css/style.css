@@ -9,6 +9,12 @@ html {
   font-size: 16px;
 }
 
+/*Format icon size*/
+.bi,
+.fa {
+  font-size: 2rem;
+}
+
 /* Dimentions of body 
     Let's try to make it in grid so we can always have header at the top, footer at the bottom even if content in main doesn't fill full screen.*/
 body {
@@ -249,11 +255,6 @@ img {
 }
 
 /* Styling of contacts page*/
-/*Format icon size*/
-.bi,
-.fa {
-  font-size: 2rem;
-}
 
 /*Format links*/
 .contact a {
